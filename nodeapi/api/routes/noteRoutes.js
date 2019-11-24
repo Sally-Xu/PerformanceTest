@@ -4,5 +4,5 @@ module.exports = function(app) {
 
   // Routes
   app.route('/note/:n')
-    .get(note.note, {n:{n}});
+    .get(note.note);
 };
