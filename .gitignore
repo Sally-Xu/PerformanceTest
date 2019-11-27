@@ -6,6 +6,7 @@
 **/out-tsc
 **/bin/
 **/obj/
+**/__pycache__
 
 # dependencies
 **/node_modules
