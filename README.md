@@ -1,4 +1,4 @@
-# Performance Benchmark Test on building Web API with NodeJs, NestJs and ASP.Net Core
+## Performance Benchmark Test on Web API build with NodeJs (pure JavaScript), NestJs (TypeScript Framework) and ASP.Net Core
 3 simple Web Api Projects: 
 nodeapi (using NodeJs with express server, https://docs.nestjs.com/
 nestapi (using NestJs + Fastify server, https://docs.nestjs.com/)
@@ -13,7 +13,7 @@ http://localhost:5007/nest/:n
 
 where n can be any number.
 
-# Performance Bechmark testing using wrk {https://github.com/wg/wrk}
+## Performance Bechmark testing using wrk {https://github.com/wg/wrk}
 ```bash
   # running 10 threads 200 connections for 30 sec, get a simple 1000 items list
   wrk -t10 -c200 -d30s http://localhost:5005/dotnet/1000
@@ -24,9 +24,9 @@ where n can be any number.
   # running on the server to see how it affect the load performance 
 ```
 
-# Benchmark Result
+## Benchmark Result
 
-## ASP.Net Core
+### ASP.Net Core
 ```
 wrk -t10 -c200 -d30s http://localhost:5005/dotnet/1000
 Running 30s test @ http://localhost:5005/dotnet/1000
@@ -40,7 +40,7 @@ Requests/sec:  23425.33
 Transfer/sec:    224.56MB
 ```
 
-## NodeJs
+### NodeJs
 ```
 wrk -t10 -c200 -d30s http://localhost:5006/node/1000  
 Running 30s test @ http://localhost:5006/node/1000
@@ -54,7 +54,7 @@ Requests/sec:   7699.00
 Transfer/sec:     74.21MB
 ```
 
-## Nest + Fastify
+### Nest + Fastify
 ```
 wrk -t10 -c200 -d30s http://localhost:5007/nest/1000
 Running 30s test @ http://localhost:5007/nest/1000
@@ -66,7 +66,7 @@ Running 30s test @ http://localhost:5007/nest/1000
 Requests/sec:   7606.28
 Transfer/sec:     72.83MB
 ```
-# Conclusion
+## Conclusion
 Under the same condition and same code:
 
 ** | NodeJs | Nest | .Net Core
