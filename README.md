@@ -4,16 +4,14 @@ nodeapi (using NodeJs with express server, https://docs.nestjs.com/
 nestapi (using NestJs + Fastify server, https://docs.nestjs.com/)
 dotnetapi  (using ASP.Net Core, https://docs.microsoft.com/en-us/dotnet/core/about)
 
-The Api endpoint builds a List contains n number string items and returns the list
+The testing Api simply builds a List contains n number strings and returns the list
 
 The Api End Points are: 
-http://localhost:5005/dotnet/:n
-http://localhost:5006/node/:n
-http://localhost:5007/nest/:n
+DotNetApi: http://localhost:5005/dotnet/{:n}
+NodeApi: http://localhost:5006/node/{:n}
+NestApi: http://localhost:5007/nest/{:n}
 
-where n can be any number.
-
-## Performance Bechmark testing using wrk {https://github.com/wg/wrk}
+## Performance Bechmark test using wrk benchmarking tool {https://github.com/wg/wrk}
 ```bash
   # running 10 threads 200 connections for 30 sec, get a simple 1000 items list
   wrk -t10 -c200 -d30s http://localhost:5005/dotnet/1000
