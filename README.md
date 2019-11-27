@@ -1,4 +1,4 @@
-# Performance Benchmarks on NodeJs, NestJs and DotNet Core
+# Performance Benchmark Test on building Web API with NodeJs, NestJs and ASP.Net Core
 3 simple Web Api Projects: 
 nodeapi (using NodeJs with express server, https://docs.nestjs.com/
 nestapi (using NestJs + Fastify server, https://docs.nestjs.com/)
@@ -26,7 +26,7 @@ where n can be any number.
 
 # Benchmark Result
 
-## .Net Core
+## ASP.Net Core
 ```
 wrk -t10 -c200 -d30s http://localhost:5005/dotnet/1000
 Running 30s test @ http://localhost:5005/dotnet/1000
@@ -66,5 +66,15 @@ Running 30s test @ http://localhost:5007/nest/1000
 Requests/sec:   7606.28
 Transfer/sec:     72.83MB
 ```
+# Conclusion
+Under the same condition and same code:
 
+|NodeJs|Nest|.Net Core
+--- | --- | --- | ---  
+# Requests Served|231332|228959|704577
+Req/sec|7699|7606|23425
+ransfer/sec|74.21MB|72.83MB|224.56MB
+
+ASP.Net Core has the best performance out of 3. Almost can serve 3x requests under the same condition.
+Nestjs + Fastify have the comparible performs with Nodejs (pure JavaScript) with Express server. But you can write much cleaner structured code with Nestjs (using TypeScript).   
 
