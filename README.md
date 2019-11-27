@@ -11,7 +11,39 @@ DotNetApi: http://localhost:5005/dotnet/{:n}
 NodeApi: http://localhost:5006/node/{:n}
 NestApi: http://localhost:5007/nest/{:n}
 
-## Performance Bechmark test using wrk benchmarking tool {https://github.com/wg/wrk}
+## Steps to Perform the Test
+1) Clone the Project
+
+1) Run the dotnet api
+```
+# cd to PerformanceTest folder
+cd PerformanceTest
+cd dotnetapi
+dotnet restore
+dotnet build
+dotnet run
+```
+hit http://localhost:5005/dotnet/1000 on a browser to check if the api is running
+
+3) Run the nodejs api
+```
+cd PerformanceTest
+cd nodeapi
+npm install
+npm run start
+```
+hit http://localhost:5006/node/1000 on a browser to check if the api is running
+
+4) Run the nestjs api
+```
+cd PerformanceTest
+cd nestapi
+npm install
+npm run start:prod
+```
+hit http://localhost:5007/nest/1000 on a browser to check if the api is running
+
+5) Run Bechmark test using wrk benchmarking tool {https://github.com/wg/wrk}
 ```bash
   # running 10 threads 200 connections for 30 sec, get a simple 1000 items list
   wrk -t10 -c200 -d30s http://localhost:5005/dotnet/1000
