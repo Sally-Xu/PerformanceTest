@@ -1,7 +1,7 @@
 
 ## Description
 
-[DotNetCore] framework Web Api for Performance Testing.
+Web Api build with DotNetCore framework for Performance Testing.
 
 ## Installation
 
