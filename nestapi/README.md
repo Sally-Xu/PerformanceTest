@@ -2,6 +2,8 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+This project already have Nest Running with Fastify
+
 ## Installation
 
 ```bash
