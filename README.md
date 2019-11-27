@@ -44,7 +44,7 @@ npm run start:prod
 ```
 hit http://localhost:5007/nest/1000 on a browser to check if the api is running
 
-4) Run the Flask api
+5) Run the Flask api
 ```
 cd PerformanceTest
 cd flaskapi
@@ -53,7 +53,7 @@ python3 app.py
 ```
 hit http://localhost:5008/flask/1000 on a browser to check if the api is running
 
-5) Run Bechmark test using wrk benchmarking tool {https://github.com/wg/wrk}
+6) Run Bechmark test using wrk benchmarking tool {https://github.com/wg/wrk}
 ```bash
   # running 10 threads 200 connections for 30 sec, get a simple 1000 items list
   wrk -t10 -c200 -d30s http://localhost:5005/dotnet/1000
