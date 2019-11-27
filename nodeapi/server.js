@@ -4,7 +4,8 @@ var express = require('express'),
   bodyParser = require('body-parser');
   app.use(bodyParser.urlencoded({ extended: true }));
   app.use(bodyParser.json());
-  var routes = require('./api/routes/noteRoutes'); //importing route
+  
+  var routes = require('./api/routes/nodeRoutes'); //importing route
   
   routes(app); //register the route
 
