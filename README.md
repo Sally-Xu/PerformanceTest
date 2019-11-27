@@ -1,6 +1,10 @@
 # Performance Benchmarks on NodeJs, NestJs and DotNet Core
-3 simple Web Api Projects: nodeapi (using express), nestapi (using Fastify server) and dotnetapi.
-The Api endpoint builds a n number items list and returns the list
+3 simple Web Api Projects: 
+nodeapi (using NodeJs with express server, https://docs.nestjs.com/
+nestapi (using NestJs + Fastify server, https://docs.nestjs.com/)
+dotnetapi  (using ASP.Net Core, https://docs.microsoft.com/en-us/dotnet/core/about)
+
+The Api endpoint builds a List contains n number string items and returns the list
 
 The Api End Points are: 
 http://localhost:5005/dotnet/:n
