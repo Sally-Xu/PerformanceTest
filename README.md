@@ -49,7 +49,7 @@ hit http://localhost:5007/nest/1000 on a browser to check if the api is running
 cd PerformanceTest
 cd flaskapi
 npm install
-python3 app.py
+python3 src/app.py
 ```
 hit http://localhost:5008/flask/1000 on a browser to check if the api is running
 
