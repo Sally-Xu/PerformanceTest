@@ -129,6 +129,6 @@ Under the same condition and same code:
 *Req/sec* | 7699 | 7606 | 23425 | 533.22
 *Transfer/sec* | 74.21MB | 72.83MB | 224.56MB | 5.61MB
 
-ASP.Net Core has the best performance out of 3, almost 3 times beter.
+ASP.Net Core has the best performance out of 4, almost 3 times beter than nodejs.
 Nestjs (with Fastify) has the comparible performance with Nodejs (pure JavaScript, with Express). But Nestjs provides structure to write cleaner code.    
 
