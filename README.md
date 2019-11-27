@@ -76,5 +76,5 @@ Under the same condition and same code:
 *Transfer/sec* | 74.21MB | 72.83MB | 224.56MB
 
 ASP.Net Core has the best performance out of 3, almost 3 times beter.
-Nestjs + Fastify have the comparible performs with Nodejs (pure JavaScript) with Express server. But you can write much cleaner structured code with Nestjs (using TypeScript).   
+Nestjs (with Fastify) has the comparible performs with Nodejs (pure JavaScript, with Express). But Nestjs provides structure to write cleaner code.    
 
