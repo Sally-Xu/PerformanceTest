@@ -175,3 +175,10 @@ Transfer/sec:      4.89MB
 #### ASP.Net Core has the best performance out of 4, almost 3 times beter when no simple code, 5 time better when retrieve data from database.
 
 #### Nestjs (with Fastify) has the comparible performance with Nodejs (pure JavaScript, with Express). But Nestjs provides structure to write cleaner code.
+
+### Several Considerations
+1) Tested with ASP.NET Core V2.2 and V3.1. The results are similar.
+2) Turn on https will reduce the performance by 40%
+3) All tests were done in localhost. Should also be done on Cloud.
+
+
