@@ -10,12 +10,15 @@ namespace dotnetapi.Controllers
     [Route("dotnet/[controller]")]
     public class DataController : ControllerBase
     {
-        [HttpGet]
-        public ActionResult<IEnumerable<Author>> Get2()
+        private IMongoDatabase Db {get;}
+        public DataController(IMongoDatabase db)
         {
-            var client = new MongoClient("mongodb://root:example@localhost:27017");
-            var dataBase = client.GetDatabase("AppDb");
-            var collection = dataBase.GetCollection<Author>(typeof(Author).Name.ToLower());
+           Db = db;
+        }
+        [HttpGet]
+        public ActionResult<IEnumerable<Author>> Get()
+        {
+            var collection = Db.GetCollection<Author>(typeof(Author).Name.ToLower());
             var list = collection.Find(Author => true).ToList();
             return Ok(list);
         }

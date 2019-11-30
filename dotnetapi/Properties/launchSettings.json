@@ -1,10 +1,10 @@
-﻿{
+{
   "$schema": "http://json.schemastore.org/launchsettings.json",
   "profiles": {
-    "com.metacx.api": {
+    "dotnetapi": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "dotnet",
+      "launchUrl": "dotnet/1000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
