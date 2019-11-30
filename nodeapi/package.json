@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "fastify": "^2.10.0"
+    "fastify": "^2.10.0",
+    "mongodb": "^3.3.5"
   }
 }
