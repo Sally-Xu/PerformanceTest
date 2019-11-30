@@ -127,7 +127,7 @@ Requests/sec:    547.52
 
 ```
 
-## Benchmark Result with MongoDB Database access
+## Benchmark Result with simple MongoDB Database read
 
 ### ASP.Net Core
 ```
